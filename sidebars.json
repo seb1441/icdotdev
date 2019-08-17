@@ -1,0 +1,22 @@
+{
+  "docs": {
+    "Getting Started": [
+      "installation",
+      "authoring",
+      "deploying",
+      "interacting",
+      "community",
+      "cleanup"
+    ],
+    "Guides": ["configuration", "dependencies", "editors"],
+    "References": [
+      "manifest",
+      "resources",
+      "parameters",
+      "imports",
+      "assets",
+      "parser",
+      "stdlib"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "icdotdev/icdotdev",
+  "dockerFile": "Dockerfile",
+  "extensions": [
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode"
+  ],
+  "appPort": [3000, 35729],
+  "postCreateCommand": "yarn install",
+}

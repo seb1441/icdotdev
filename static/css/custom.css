@@ -1,0 +1,74 @@
+/*
+// Copyright 2019 Farzad Senart and Lionel Suss. All rights reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+*/
+
+a {
+  color: #58ae00;
+}
+
+.projectTitle {
+  margin-top: 0;
+}
+
+.projectTitle small {
+  font-weight: 300;
+  font-size: 62%;
+  line-height: 1.375;
+}
+
+.projectTitle br {
+  display: none;
+}
+
+.button.action {
+  border: none;
+  background: #8ee000;
+  font-size: 100%;
+  padding: 15px;
+}
+
+.button.action:hover {
+  background: #1a3b3f;
+  color: #fff;
+}
+
+.imageAlignTop .blockImage {
+  max-width: 60%;
+}
+
+.imageAlignTop .blockImage img {
+  height: 150px;
+}
+
+.detail img {
+  height: 250px;
+}
+
+.start .wrapper {
+  text-align: center;
+  font-size: 125%;
+}
+
+@media only screen and (min-width: 736px) {
+  .projectTitle br {
+    display: initial;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .gridBlock .blockElement.imageAlignTop {
+    margin-bottom: 80px;
+  }
+}
