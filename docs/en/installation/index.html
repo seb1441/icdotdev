@@ -1,0 +1,131 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Installation · ic.dev</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## Installing IC CLI"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Installation · ic.dev"/><meta property="og:type" content="website"/><meta property="og:url" content="https://ic.dev/"/><meta property="og:description" content="## Installing IC CLI"/><meta property="og:image" content="https://ic.dev/img/favicon-32x32.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://ic.dev/img/favicon-32x32.png"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/atom-one-dark.min.css"/><link rel="alternate" type="application/atom+xml" href="https://ic.dev/blog/atom.xml" title="ic.dev Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://ic.dev/blog/feed.xml" title="ic.dev Blog RSS Feed"/><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-145891133-1', 'auto');
+              ga('send', 'pageview');
+            </script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script><script type="text/javascript" src="/js/code-block-buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/en"><img class="logo" src="/img/favicon-32x32.png" alt="ic.dev"/><h2 class="headerTitleWithLogo">ic.dev</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive siteNavItemActive"><a href="/docs/en/installation" target="_self">Docs</a></li><li class=""><a href="/blog/" target="_self">Blog</a></li><li class=""><a href="/en/help" target="_self">Help</a></li><li class=""><a href="https://github.com/icdotdev/cli" target="_self">GitHub</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Getting Started</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Getting Started<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem navListItemActive"><a class="navItem" href="/docs/en/installation">Installation</a></li><li class="navListItem"><a class="navItem" href="/docs/en/authoring">Authoring</a></li><li class="navListItem"><a class="navItem" href="/docs/en/deploying">Deploying</a></li><li class="navListItem"><a class="navItem" href="/docs/en/interacting">Interacting</a></li><li class="navListItem"><a class="navItem" href="/docs/en/community">Community</a></li><li class="navListItem"><a class="navItem" href="/docs/en/cleanup">Cleanup</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Guides<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/en/configuration">Configuration</a></li><li class="navListItem"><a class="navItem" href="/docs/en/dependencies">Dependencies</a></li><li class="navListItem"><a class="navItem" href="/docs/en/editors">Editors</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">References<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/en/manifest">Manifest</a></li><li class="navListItem"><a class="navItem" href="/docs/en/resources">Resources</a></li><li class="navListItem"><a class="navItem" href="/docs/en/parameters">Parameters</a></li><li class="navListItem"><a class="navItem" href="/docs/en/imports">Imports</a></li><li class="navListItem"><a class="navItem" href="/docs/en/assets">Assets</a></li><li class="navListItem"><a class="navItem" href="/docs/en/parser">Parser</a></li><li class="navListItem"><a class="navItem" href="/docs/en/stdlib">Standard Library</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/icdotdev/icdotdev/edit/master/docs/start-installation.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 class="postHeaderTitle">Installation</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="installing-ic-cli"></a><a href="#installing-ic-cli" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Installing IC CLI</h2>
+<ol>
+<li><p>Ensure you have a version of <a href="https://www.python.org/downloads/">Python</a> <strong>&gt;=
+3.7</strong> and <a href="https://pip.pypa.io/en/stable/installing/"><code>pip</code></a> installed.</p></li>
+<li><p>Install the <a href="https://pypi.org/project/iccli/">IC CLI package</a>:</p>
+<pre><code class="hljs css language-shell">python3 -m pip install iccli
+</code></pre></li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="connecting-aws"></a><a href="#connecting-aws" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Connecting AWS</h2>
+<ol>
+<li><p>Ensure you have <a href="https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account">created and activated</a> your
+<a href="http://aws.amazon.com/free/">free AWS account</a>.</p>
+<blockquote>
+<p>Most of our examples use the AWS Free Tier, and please follow
+cleanup steps at the end of each tutorial to avoid paying for stale
+resources.</p>
+</blockquote></li>
+<li><p>Ensure you have the right permissions to access your AWS account.
+Refer to the <a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html">official AWS instructions</a> for how to
+configure your AWS credentials.</p></li>
+</ol>
+<h2><a class="anchor" aria-hidden="true" id="configuring-ic-cli"></a><a href="#configuring-ic-cli" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configuring IC CLI</h2>
+<p>IC CLI uses the AWS SDK to interact with your AWS account and needs
+somewhere to upload deployment artifacts. Proceed with your <strong>default
+AWS configuration</strong> and create or retrieve the required Amazon S3
+bucket:</p>
+<pre><code class="hljs css language-shell">ic aws setup
+</code></pre>
+<p>If this is the first time you use IC CLI with your AWS account, then
+accept the resources creation plan:</p>
+<pre><code class="hljs css language-shell">Plan review
+
+✚ plan CREATE
+└── ic_setup_default
+    └── ✚ artifacts_bucket CREATE aws.s3.bucket
+
+Do you want to continue? [y/N]: y
+</code></pre>
+<p>Otherwise, let IC CLI retrieve the previously created Amazon S3
+bucket.</p>
+<blockquote>
+<p>Refer to the <a href="/docs/en/configuration">Configuration guide</a> for more
+advanced configuration scenarios.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="updating-ic-cli"></a><a href="#updating-ic-cli" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Updating IC CLI</h2>
+<p>At any time after IC CLI is installed, you can check your current
+version:</p>
+<pre><code class="hljs css language-shell">ic --version
+</code></pre>
+<p>You will see somthing like this:</p>
+<pre><code class="hljs css language-shell">{
+  "ic": "0.2.0",
+  "python": "3.7.4",
+  "darwin": "18.7.0",
+  "boto3": "1.9.206"
+}
+</code></pre>
+<p>You can update to the <a href="https://pypi.org/project/iccli/#history">latest version</a> of IC CLI:</p>
+<pre><code class="hljs css language-shell">python3 -m pip install --upgrade iccli
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-next button" href="/docs/en/authoring"><span>Authoring</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#installing-ic-cli">Installing IC CLI</a></li><li><a href="#connecting-aws">Connecting AWS</a></li><li><a href="#configuring-ic-cli">Configuring IC CLI</a></li><li><a href="#updating-ic-cli">Updating IC CLI</a></li></ul></nav></div><footer class="nav-footer"><section class="sitemap"><div><h5>Docs</h5><a href="/docs/en/installation">Getting Started</a><a href="/docs/en/resources">Resources</a><a href="/docs/en/assets">Assets</a><a href="/docs/en/parser">Parser</a><a href="/docs/en/dependencies">Dependencies</a><a href="/docs/en/stdlib">Standard Library</a></div><div><h5>Channels</h5><a href="https://github.com/icdotdev/cli">GitHub</a><a href="https://twitter.com/icdotdev">Twitter</a><a href="https://slack.ic.dev/">Slack</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="/en/help">Help</a></div></section><section class="copyright">Copyright 2019 Farzad Senart and Lionel Suss. All rights reserved.</section></footer></div><script>window.twttr=(function(d,s, id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};return t;}(document, 'script', 'twitter-wjs'));</script></body></html>

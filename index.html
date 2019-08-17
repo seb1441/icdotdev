@@ -1,0 +1,85 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>ic.dev · compose, share, and deploy cloud infrastructure bricks</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="compose, share, and deploy cloud infrastructure bricks"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="ic.dev · compose, share, and deploy cloud infrastructure bricks"/><meta property="og:type" content="website"/><meta property="og:url" content="https://ic.dev/"/><meta property="og:description" content="compose, share, and deploy cloud infrastructure bricks"/><meta property="og:image" content="https://ic.dev/img/favicon-32x32.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://ic.dev/img/favicon-32x32.png"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/atom-one-dark.min.css"/><link rel="alternate" type="application/atom+xml" href="https://ic.dev/blog/atom.xml" title="ic.dev Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://ic.dev/blog/feed.xml" title="ic.dev Blog RSS Feed"/><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-145891133-1', 'auto');
+              ga('send', 'pageview');
+            </script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script><script type="text/javascript" src="/js/code-block-buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/en"><img class="logo" src="/img/favicon-32x32.png" alt="ic.dev"/><h2 class="headerTitleWithLogo">ic.dev</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/en/installation" target="_self">Docs</a></li><li class=""><a href="/blog/" target="_self">Blog</a></li><li class=""><a href="/en/help" target="_self">Help</a></li><li class=""><a href="https://github.com/icdotdev/cli" target="_self">GitHub</a></li></ul></nav></div></header></div></div><div class="navPusher"><div><div class="homeContainer"><div class="wrapper homeWrapper"><div class="inner"><h1 class="projectTitle">ic.dev<small>An <strong style="color:#8ee000">open source</strong> project that makes it easy to <br/> <strong>compose</strong>, <strong>share</strong>, and <strong>deploy</strong> cloud infrastructure bricks</small></h1><div class="promoSection"><div class="promoRow"><img src="/img/hero.gif" alt="Deploy a sample brick from the IC Public Index"/></div><div class="promoRow"><div class="pluginRowBlock"><div class="pluginWrapper"><a class="button action" href="/docs/en/installation"><strong>Get Started</strong></a></div></div></div></div></div></div></div><div class="mainContainer"><div class="container lightBackground paddingBottom paddingTop"><div class="wrapper"><div class="gridBlock"><div class="blockElement alignCenter imageAlignTop threeByGridBlock"><div class="blockImage"><img src="/img/undraw_confirmation_2uy0.svg"/></div><div class="blockContent"><h2><div><span><p>Native</p>
+</span></div></h2><div><span><p>As we rely on the official
+<a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-resource-specification.html">AWS CloudFormation Resource Specification</a>,
+you have access to <strong>100% of AWS resources</strong>. We also compile
+your code to <strong>native AWS CloudFormation</strong>, so that you can
+always access the raw templates and benefit from <strong>state
+management by AWS CloudFormation</strong>.</p>
+</span></div></div></div><div class="blockElement alignCenter imageAlignTop threeByGridBlock"><div class="blockImage"><img src="/img/undraw_joyride_hnno.svg"/></div><div class="blockContent"><h2><div><span><p>Familiar</p>
+</span></div></h2><div><span><p><strong>Write your infrastructure logic in Python</strong>, the
+well-known easy-to-use, powerful, and versatile language. Use
+modern software development techniques and forget about all
+<a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html">AWS CloudFormation quirks and weirdness</a>
+thanks to our <a href="/docs/en/parser"><strong>smart purpose-built parser</strong></a>.</p>
+</span></div></div></div><div class="blockElement alignCenter imageAlignTop threeByGridBlock"><div class="blockImage"><img src="/img/undraw_open_source_1qxw.svg"/></div><div class="blockContent"><h2><div><span><p>Open</p>
+</span></div></h2><div><span><p>Get involved and <strong>be part of the adventure</strong>.
+Join our <a href="https://slack.ic.dev">Slack channel</a>, browse our
+<a href="https://github.com/icdotdev">GitHub repositories</a>,
+<a href="https://github.com/icdotdev/cli/issues">submit issues</a> or
+<a href="https://github.com/icdotdev/cli/pulls">pull requests</a> for
+bugs you find, and <strong>ask for any new features</strong> you may want
+to be implemented.</p>
+</span></div></div></div></div><br/><br/><div class="gridBlock"><div class="blockElement alignCenter imageAlignTop twoByGridBlock"><div class="blockImage"><img src="/img/undraw_building_blocks_n0nc.svg"/></div><div class="blockContent"><h2><div><span><p>Modular</p>
+</span></div></h2><div><span><p><a href="/docs/en/resources"><strong>Everything is a resource</strong></a>.
+Whether it be a simple Amazon S3 bucket or a serverless
+e-commerce app, <strong>combine any resources</strong> into more high-level
+bricks. View <strong>your whole infrastructure as a nested tree</strong> of
+arbitrary level and gain unprecedented insights about your
+configuration.</p>
+</span></div></div></div><div class="blockElement alignCenter imageAlignTop twoByGridBlock"><div class="blockImage"><img src="/img/undraw_elements_cipa.svg"/></div><div class="blockContent"><h2><div><span><p>Community</p>
+</span></div></h2><div><span><p>Need a particular service or even a whole
+application? <strong>Don't reinvent the wheel</strong>. We ship with a
+<a href="/docs/en/community"><strong>free and public index</strong></a>
+to allow authors and contributors to make their <strong>bricks
+available for the community</strong> to use under <strong>open source
+license</strong> terms. Before writing a line of code, search in the
+index!</p>
+</span></div></div></div></div></div></div><div class="container paddingBottom paddingTop"><div class="wrapper"><div class="gridBlock"><div class="blockElement detail imageAlignSide imageAlignRight twoByGridBlock"><div class="blockContent"><h2><div><span><p>Standardization and Productivity</p>
+</span></div></h2><div><span><p><strong>Focus on your application</strong> and get up and running
+quickly without having to worry about the undifferentiated
+heavy lifting. <strong>Use snake case</strong> for all resources,
+attributes, and properties. Forget entirely about AWS
+CloudFormation intrinsic functions and <a href="/docs/en/parser"><strong>use the regular
+string and list operations</strong></a>
+instead. Whether it be a simple resource attribute or a nested
+dictionary, <a href="/docs/en/resources#return"><strong>export anything</strong></a>
+from your AWS CloudFormation stacks, and reference the values
+from other stacks.</p>
+</span></div></div><div class="blockImage"><img src="/img/undraw_going_up_ttm5.svg"/></div></div></div></div></div><div class="container lightBackground paddingBottom paddingTop"><div class="wrapper"><div class="gridBlock"><div class="blockElement detail imageAlignSide imageAlignLeft twoByGridBlock"><div class="blockImage"><img src="/img/undraw_collecting_fjjl.svg"/></div><div class="blockContent"><h2><div><span><p>Isolation and Repeatability</p>
+</span></div></h2><div><span><p>You can assimilate bricks to <strong>containerized
+infrastructure units</strong>, just like Docker images but for
+infrastructure configuration.
+<a href="/docs/en/assets"><strong>Bundle any artifact</strong></a> needed by your
+infrastructure inside your bricks, and share them seamlessly
+with the community. Manage your infrastructure in an
+<strong>auditable</strong>, <strong>repeatable</strong>, and <strong>dependable</strong> way. Bricks
+are <strong>deterministic</strong> and have no access to the network,
+filesystem, and other random interferences.</p>
+</span></div></div></div></div></div></div><div class="container paddingBottom paddingTop"><div class="wrapper"><div class="gridBlock"><div class="blockElement detail imageAlignSide imageAlignRight twoByGridBlock"><div class="blockContent"><h2><div><span><p>Features and Extensibility</p>
+</span></div></h2><div><span><p>We currently <strong>support 100% of AWS resources</strong> and
+enable you with features like <a href="/docs/en/parser"><strong>smart parsing</strong></a>,
+<a href="/docs/en/assets"><strong>assets</strong></a>, and
+<a href="/docs/en/dependencies"><strong>dependency management</strong></a> along with a
+<a href="/docs/en/stdlib">standard library</a> to access environment
+variables or <strong>manage sensitive data</strong> and <strong>cross brick
+references</strong>. If you have ideas for useful features, feel free
+to contribute on <a href="https://github.com/icdotdev/cli">GitHub</a>. But that's not
+all. The <strong>free and public index</strong> grows day after day to
+provide you with more high-level bricks. <strong>You're only one
+brick away your next awesome app</strong> and if you think it can be
+useful to the community, <strong>just publish it</strong>!</p>
+</span></div></div><div class="blockImage"><img src="/img/undraw_blooming_jtv6.svg"/></div></div></div></div></div><div class="container start"><div class="wrapper"><a class="button action" href="/docs/en/installation"><strong>Get Started</strong></a></div></div></div></div><footer class="nav-footer"><section class="sitemap"><div><h5>Docs</h5><a href="/docs/en/installation">Getting Started</a><a href="/docs/en/resources">Resources</a><a href="/docs/en/assets">Assets</a><a href="/docs/en/parser">Parser</a><a href="/docs/en/dependencies">Dependencies</a><a href="/docs/en/stdlib">Standard Library</a></div><div><h5>Channels</h5><a href="https://github.com/icdotdev/cli">GitHub</a><a href="https://twitter.com/icdotdev">Twitter</a><a href="https://slack.ic.dev/">Slack</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="/en/help">Help</a></div></section><section class="copyright">Copyright 2019 Farzad Senart and Lionel Suss. All rights reserved.</section></footer></div><script>window.twttr=(function(d,s, id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};return t;}(document, 'script', 'twitter-wjs'));</script></body></html>

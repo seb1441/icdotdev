@@ -1,0 +1,151 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Authoring · ic.dev</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="The IC project aims to make it as easy as possible for you to author"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Authoring · ic.dev"/><meta property="og:type" content="website"/><meta property="og:url" content="https://ic.dev/"/><meta property="og:description" content="The IC project aims to make it as easy as possible for you to author"/><meta property="og:image" content="https://ic.dev/img/favicon-32x32.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://ic.dev/img/favicon-32x32.png"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/atom-one-dark.min.css"/><link rel="alternate" type="application/atom+xml" href="https://ic.dev/blog/atom.xml" title="ic.dev Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://ic.dev/blog/feed.xml" title="ic.dev Blog RSS Feed"/><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-145891133-1', 'auto');
+              ga('send', 'pageview');
+            </script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script><script type="text/javascript" src="/js/code-block-buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/en"><img class="logo" src="/img/favicon-32x32.png" alt="ic.dev"/><h2 class="headerTitleWithLogo">ic.dev</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/en/installation" target="_self">Docs</a></li><li class=""><a href="/blog/" target="_self">Blog</a></li><li class=""><a href="/en/help" target="_self">Help</a></li><li class=""><a href="https://github.com/icdotdev/cli" target="_self">GitHub</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Getting Started</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Getting Started<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/en/installation">Installation</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/en/authoring">Authoring</a></li><li class="navListItem"><a class="navItem" href="/docs/en/deploying">Deploying</a></li><li class="navListItem"><a class="navItem" href="/docs/en/interacting">Interacting</a></li><li class="navListItem"><a class="navItem" href="/docs/en/community">Community</a></li><li class="navListItem"><a class="navItem" href="/docs/en/cleanup">Cleanup</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Guides<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/en/configuration">Configuration</a></li><li class="navListItem"><a class="navItem" href="/docs/en/dependencies">Dependencies</a></li><li class="navListItem"><a class="navItem" href="/docs/en/editors">Editors</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">References<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/en/manifest">Manifest</a></li><li class="navListItem"><a class="navItem" href="/docs/en/resources">Resources</a></li><li class="navListItem"><a class="navItem" href="/docs/en/parameters">Parameters</a></li><li class="navListItem"><a class="navItem" href="/docs/en/imports">Imports</a></li><li class="navListItem"><a class="navItem" href="/docs/en/assets">Assets</a></li><li class="navListItem"><a class="navItem" href="/docs/en/parser">Parser</a></li><li class="navListItem"><a class="navItem" href="/docs/en/stdlib">Standard Library</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/icdotdev/icdotdev/edit/master/docs/start-authoring.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 class="postHeaderTitle">Authoring</h1></header><article><div><span><p>The IC project aims to make it as easy as possible for you to author
+your cloud infrastructure bricks.</p>
+<p>After <a href="/docs/en/installation">installation</a>, you have your IC CLI
+configured to interact with your AWS account.</p>
+<h2><a class="anchor" aria-hidden="true" id="creating-scaffold"></a><a href="#creating-scaffold" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Creating Scaffold</h2>
+<p>An IC brick requires at least two files:</p>
+<ul>
+<li><code>brick.yaml</code>: a <a href="/docs/en/manifest">manifest</a> that contains metadata about your brick</li>
+<li><code>index.ic</code>: a source file that contains your infrastructure resources</li>
+</ul>
+<blockquote>
+<p>Refer to the <a href="/docs/en/editors">Editors guide</a> for enabling syntax
+highlighting for <code>.ic</code> and <code>.icp</code> files.</p>
+</blockquote>
+<p>Use IC CLI to create a new brick scaffold:</p>
+<pre><code class="hljs css language-shell">ic new USERNAME.hello_world
+</code></pre>
+<p><strong>A brick identifier is composed by a username and a brick name,
+separated by a dot</strong>. Replace <code>USERNAME</code> by yours. The <code>USERNAME</code> is
+also the owner of the brick and becomes of interest if you eventually
+publish your brick into the IC Public Index.</p>
+<p>IC CLI asks for general information about your new brick:</p>
+<pre><code class="hljs css language-shell">name [USERNAME.hello_world]:
+version [v0.1.0]:
+private [false]:
+license [MIT]:
+</code></pre>
+<blockquote>
+<p>Public bricks (<code>private: false</code>) must have an open source license
+covered by the <a href="https://spdx.org/licenses/">SPDX license list</a>.</p>
+</blockquote>
+<p>You have now a <code>hello_world</code> brick with an initial scaffold:</p>
+<pre><code class="hljs css language-shell">.
+`-- hello_world
+    |-- brick.yaml
+    `-- index.ic
+
+1 directory, 2 files
+</code></pre>
+<pre><code class="hljs css language-shell">cd hello_world
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="editing-resources"></a><a href="#editing-resources" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Editing Resources</h2>
+<p>We will create a brick exposing a public HTTP API and backed by a
+serverless function written in Node.js which echoes a hello world
+message.</p>
+<p>We can proceed with raw AWS resources and wire them together to achieve
+our goal. However, it is a pretty tedious process. The IC project comes
+with an experimental framework <a href="https://github.com/icdotdev/lab/tree/master/src/simple"><code>iclab.simple</code></a> to
+ease serverless cloud infrastructure development.</p>
+<p>Start by creating a simple <code>handler.js</code> file for our serverless function
+to output a hello world message:</p>
+<pre><code class="hljs css language-js">exports.handle = <span class="hljs-keyword">async</span> () =&gt; ({
+  <span class="hljs-attr">statusCode</span>: <span class="hljs-number">200</span>,
+  <span class="hljs-attr">body</span>: <span class="hljs-string">"Hello, World!\n"</span>
+});
+</code></pre>
+<p>This file is required by our brick to operate correctly, and we must,
+therefore, reference it as an <a href="/docs/en/assets">asset</a>. Edit your
+<code>brick.yaml</code> as follows:</p>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">name:</span> <span class="hljs-string">USERNAME.hello_world</span>
+<span class="hljs-attr">version:</span> <span class="hljs-string">v0.1.0</span>
+<span class="hljs-attr">license:</span> <span class="hljs-string">MIT</span>
+<span class="hljs-attr">main:</span> <span class="hljs-string">:brick</span>
+<span class="hljs-attr">assets:</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">handler.js</span>
+</code></pre>
+<p>It's time to describe the actual resources and their wirings by editing
+the <code>index.ic</code> file:</p>
+<pre><code class="hljs css language-python"><span class="hljs-keyword">from</span> iclab <span class="hljs-keyword">import</span> simple <span class="hljs-comment"># import the simple framework</span>
+<span class="hljs-keyword">from</span> . <span class="hljs-keyword">import</span> assets     <span class="hljs-comment"># import our assets</span>
+
+<span class="hljs-meta">@resource</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">brick</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-comment"># create a public HTTP API</span>
+    api = simple.api(<span class="hljs-string">"api"</span>, <span class="hljs-string">"demo"</span>, <span class="hljs-string">"1.0.0"</span>)
+    <span class="hljs-comment"># create a serverless function</span>
+    func = simple.function(<span class="hljs-string">"func"</span>, <span class="hljs-string">"nodejs8.10"</span>, assets[<span class="hljs-string">"handler.js"</span>])
+    <span class="hljs-comment"># wire them together</span>
+    func.http(api, <span class="hljs-string">"get"</span>, <span class="hljs-string">"/hello"</span>)
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/en/installation"><span class="arrow-prev">← </span><span>Installation</span></a><a class="docs-next button" href="/docs/en/deploying"><span>Deploying</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#creating-scaffold">Creating Scaffold</a></li><li><a href="#editing-resources">Editing Resources</a></li></ul></nav></div><footer class="nav-footer"><section class="sitemap"><div><h5>Docs</h5><a href="/docs/en/installation">Getting Started</a><a href="/docs/en/resources">Resources</a><a href="/docs/en/assets">Assets</a><a href="/docs/en/parser">Parser</a><a href="/docs/en/dependencies">Dependencies</a><a href="/docs/en/stdlib">Standard Library</a></div><div><h5>Channels</h5><a href="https://github.com/icdotdev/cli">GitHub</a><a href="https://twitter.com/icdotdev">Twitter</a><a href="https://slack.ic.dev/">Slack</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="/en/help">Help</a></div></section><section class="copyright">Copyright 2019 Farzad Senart and Lionel Suss. All rights reserved.</section></footer></div><script>window.twttr=(function(d,s, id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};return t;}(document, 'script', 'twitter-wjs'));</script></body></html>

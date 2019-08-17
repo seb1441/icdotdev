@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>ic.dev Blog</title>
+        <link>https://ic.dev/blog</link>
+        <description>The best place to stay up-to-date with the latest ic.dev news and events.</description>
+        <lastBuildDate>Fri, 16 Aug 2019 06:00:00 GMT</lastBuildDate>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <generator>Feed for Node.js</generator>
+        <image>
+            <title>ic.dev Blog</title>
+            <url>https://ic.dev/img/favicon-32x32.png</url>
+            <link>https://ic.dev/blog</link>
+        </image>
+        <item>
+            <title><![CDATA[Introducing ic.dev]]></title>
+            <link>https://ic.dev/blog/2019/08/16/introducing-icdotdev.html</link>
+            <guid>https://ic.dev/blog/2019/08/16/introducing-icdotdev.html</guid>
+            <pubDate>Fri, 16 Aug 2019 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p><em>Posted by <a href="https://twitter.com/fsenart">Farzad Senart</a> and <a href="https://twitter.com/lionelsuss">Lionel Suss</a></em></p>
+<p>We're excited to introduce <a href="https://ic.dev">ic.dev</a>, an open source
+project you can use to describe all your infrastructure resources on AWS
+using Python and high-level abstractions. We also ship with a free and
+public registry to allow authors and contributors to make their
+infrastructure resources available for the community. In this post,
+we'll go through some remarkable aspects of the project, and an overview
+of its possibilities.</p>
+<p><img src="/blog/assets/introducing-icdotdev.gif" alt="Deploy a sample brick from the IC Public Index"></p>
+]]></description>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,162 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Manifest · ic.dev</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Each IC brick is defined by one `brick.yaml` file, the manifest, one or"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Manifest · ic.dev"/><meta property="og:type" content="website"/><meta property="og:url" content="https://ic.dev/"/><meta property="og:description" content="Each IC brick is defined by one `brick.yaml` file, the manifest, one or"/><meta property="og:image" content="https://ic.dev/img/favicon-32x32.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://ic.dev/img/favicon-32x32.png"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/atom-one-dark.min.css"/><link rel="alternate" type="application/atom+xml" href="https://ic.dev/blog/atom.xml" title="ic.dev Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://ic.dev/blog/feed.xml" title="ic.dev Blog RSS Feed"/><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-145891133-1', 'auto');
+              ga('send', 'pageview');
+            </script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script><script type="text/javascript" src="/js/code-block-buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/en"><img class="logo" src="/img/favicon-32x32.png" alt="ic.dev"/><h2 class="headerTitleWithLogo">ic.dev</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/en/installation" target="_self">Docs</a></li><li class=""><a href="/blog/" target="_self">Blog</a></li><li class=""><a href="/en/help" target="_self">Help</a></li><li class=""><a href="https://github.com/icdotdev/cli" target="_self">GitHub</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>References</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Getting Started<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/en/installation">Installation</a></li><li class="navListItem"><a class="navItem" href="/docs/en/authoring">Authoring</a></li><li class="navListItem"><a class="navItem" href="/docs/en/deploying">Deploying</a></li><li class="navListItem"><a class="navItem" href="/docs/en/interacting">Interacting</a></li><li class="navListItem"><a class="navItem" href="/docs/en/community">Community</a></li><li class="navListItem"><a class="navItem" href="/docs/en/cleanup">Cleanup</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Guides<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/en/configuration">Configuration</a></li><li class="navListItem"><a class="navItem" href="/docs/en/dependencies">Dependencies</a></li><li class="navListItem"><a class="navItem" href="/docs/en/editors">Editors</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">References<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem navListItemActive"><a class="navItem" href="/docs/en/manifest">Manifest</a></li><li class="navListItem"><a class="navItem" href="/docs/en/resources">Resources</a></li><li class="navListItem"><a class="navItem" href="/docs/en/parameters">Parameters</a></li><li class="navListItem"><a class="navItem" href="/docs/en/imports">Imports</a></li><li class="navListItem"><a class="navItem" href="/docs/en/assets">Assets</a></li><li class="navListItem"><a class="navItem" href="/docs/en/parser">Parser</a></li><li class="navListItem"><a class="navItem" href="/docs/en/stdlib">Standard Library</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/icdotdev/icdotdev/edit/master/docs/api-manifest.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 class="postHeaderTitle">Manifest</h1></header><article><div><span><p>Each IC brick is defined by one <code>brick.yaml</code> file, the manifest, one or
+more <code>.ic</code> files and an optional <code>.icp</code> file. The manifest has the
+following properties:</p>
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">name:</span> <span class="hljs-string">jdoe.hello_world</span>
+<span class="hljs-attr">version:</span> <span class="hljs-string">v1.0.0-beta</span>
+<span class="hljs-attr">license:</span> <span class="hljs-string">MIT</span>
+<span class="hljs-attr">private:</span> <span class="hljs-literal">false</span>
+<span class="hljs-attr">description:</span> <span class="hljs-string">My</span> <span class="hljs-string">awesome</span> <span class="hljs-string">brick</span>
+<span class="hljs-attr">main:</span> <span class="hljs-string">.foo.bar:my_func</span>
+<span class="hljs-attr">require:</span>
+  <span class="hljs-string">baz.qux:</span> <span class="hljs-string">v1.2.0</span>
+<span class="hljs-attr">replace:</span>
+  <span class="hljs-string">usr.brk:</span> <span class="hljs-string">../repl</span>
+  <span class="hljs-string">rsu.krb:</span> <span class="hljs-string">asm.brk</span> <span class="hljs-string">v1.0.0</span>
+<span class="hljs-attr">exclude:</span>
+  <span class="hljs-string">baz.qux:</span> <span class="hljs-string">v1.1.0</span>
+<span class="hljs-attr">assets:</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">handler.js</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">foo/bar/logo.png</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">"**/**.html"</span>
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="name-required"></a><a href="#name-required" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>name <code>required</code></h4>
+<ul>
+<li>The id of the brick composed by a username and a brick name, separated
+by a dot.</li>
+<li>The username is also the owner of the brick in the IC Public Index.</li>
+<li>If the major version is &lt;= 1, then the
+name can end with neither letter <code>v</code> nor a digit.</li>
+<li>If the major version is &gt; 1, then the name
+must end with <code>vMAJOR</code>:
+<pre><code class="hljs css language-yaml"><span class="hljs-attr">name:</span> <span class="hljs-string">jdoe.hello_worldv2</span>
+<span class="hljs-attr">version:</span> <span class="hljs-string">v2.3.4</span>
+</code></pre></li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="version-required"></a><a href="#version-required" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>version <code>required</code></h4>
+<ul>
+<li>The <a href="https://semver.org/">semantic version</a> of the brick.</li>
+<li>It must start with a lowercase <code>v</code> letter.</li>
+<li>It cannot contain <a href="https://semver.org/#spec-item-10">build metadata</a>.</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="license-conditional"></a><a href="#license-conditional" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>license <code>conditional</code></h4>
+<ul>
+<li>If <code>private: true</code>, then it can be anything or even omitted.</li>
+<li>Otherwise, it must be a valid <a href="https://spdx.org/licenses/">SPDX identifier</a>.</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="private-optional"></a><a href="#private-optional" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>private <code>optional</code></h4>
+<ul>
+<li>If <code>true</code>, then the brick cannot be published to the IC Public Index.</li>
+<li>Defaults to <code>false</code>.</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="description-optional"></a><a href="#description-optional" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>description <code>optional</code></h4>
+<ul>
+<li>At most 140 characters</li>
+<li>Cannot contain line breaks</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="main-optional"></a><a href="#main-optional" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>main <code>optional</code></h4>
+<ul>
+<li>It is the default function that is exposed when importing the brick.</li>
+<li>If provided, it must be <code>RELATIVE_IMPORT_PATH:FUNCTION_NAME</code>.</li>
+<li>Defaults to <code>index.ic</code>'s <code>brick</code> function.</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="require-optional"></a><a href="#require-optional" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>require <code>optional</code></h4>
+<ul>
+<li>A list of required bricks along with their minimum required versions.</li>
+<li>References must come either from the IC Public Index or the <code>replace</code>
+property.</li>
+<li>See also the <a href="/docs/en/dependencies">Dependency Management guide</a> for
+more information.</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="replace-optional"></a><a href="#replace-optional" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>replace <code>optional</code></h4>
+<ul>
+<li>A list of brick path replacements.</li>
+<li>References can come either from the IC Public Index or the local
+filesystem.</li>
+<li>See also the <a href="/docs/en/dependencies">Dependency Management guide</a> for
+more information.</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="exclude-optional"></a><a href="#exclude-optional" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>exclude <code>optional</code></h4>
+<ul>
+<li>A list of brick versions to exclude during upgrade or downgrade
+operations.</li>
+<li>See also the <a href="/docs/en/dependencies">Dependency Management guide</a> for
+more information.</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="assets-optional"></a><a href="#assets-optional" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>assets <code>optional</code></h4>
+<ul>
+<li>A list of assets required by the brick to operate correctly.</li>
+<li>These assets are uploaded to your AWS account upon brick deployment.</li>
+<li>These assets are part of your brick package upon publishing to the IC
+Public Index.</li>
+</ul>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/en/editors"><span class="arrow-prev">← </span><span>Editors</span></a><a class="docs-next button" href="/docs/en/resources"><span>Resources</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer"><section class="sitemap"><div><h5>Docs</h5><a href="/docs/en/installation">Getting Started</a><a href="/docs/en/resources">Resources</a><a href="/docs/en/assets">Assets</a><a href="/docs/en/parser">Parser</a><a href="/docs/en/dependencies">Dependencies</a><a href="/docs/en/stdlib">Standard Library</a></div><div><h5>Channels</h5><a href="https://github.com/icdotdev/cli">GitHub</a><a href="https://twitter.com/icdotdev">Twitter</a><a href="https://slack.ic.dev/">Slack</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="/en/help">Help</a></div></section><section class="copyright">Copyright 2019 Farzad Senart and Lionel Suss. All rights reserved.</section></footer></div><script>window.twttr=(function(d,s, id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};return t;}(document, 'script', 'twitter-wjs'));</script></body></html>
