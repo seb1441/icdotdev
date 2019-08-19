@@ -87,7 +87,7 @@ Congratulations! You have successfully published your very first brick
 and have now an entry in the IC Public Index:
 
 ```shell
-ic search USERANME
+ic search USERNAME
 ```
 
 [spdx-licenses]: https://spdx.org/licenses/
