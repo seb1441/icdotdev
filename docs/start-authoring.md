@@ -65,8 +65,8 @@ message.
 
 We can proceed with raw AWS resources and wire them together to achieve
 our goal. However, it is a pretty tedious process. The IC project comes
-with an experimental framework [`iclab.simple`][iclabsimple-github] to
-ease serverless cloud infrastructure development.
+with an experimental brick [`iclab.simple`][iclabsimple-github] to ease 
+serverless cloud infrastructure development.
 
 Start by creating a simple `handler.js` file for our serverless function
 to output a hello world message:
@@ -109,4 +109,4 @@ def brick():
 ```
 
 [spdx-licenses]: https://spdx.org/licenses/
-[iclabsimple-github]: https://github.com/icdotdev/lab/tree/master/src/simple
+[iclabsimple-github]: https://github.com/icdotdev/iclab.simple

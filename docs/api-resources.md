@@ -150,6 +150,6 @@ The built-in `Resource` behaves like a regular dictionary, as seen in
 previous examples, but can also expose helper functions as attributes
 and be stateful. It can be viewed as a simple version of a _class_ with
 helper functions being _class methods_. For real world examples take a
-look at https://github.com/icdotdev/lab.
+look at https://github.com/icdotdev/iclab.simple.
 
 [cfn-s3]: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html#aws-properties-s3-bucket-return-values

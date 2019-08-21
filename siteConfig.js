@@ -23,6 +23,7 @@ const siteConfig = {
 
   headerLinks: [
     { label: "Docs", doc: "installation" },
+    { label: "Labs", href: "https://github.com/icdotdev?q=iclab" },
     { label: "Blog", blog: true },
     { label: "Help", page: "help" },
     { label: "GitHub", href: "https://github.com/icdotdev/cli" }
