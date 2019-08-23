@@ -159,7 +159,7 @@ following parameters:
 
 > Subnet bits is the inverse of subnet mask. To calculate the required
 > host bits for a given subnet bits, subtract the subnet bits from `32`
-> for IPv4 or `128` for IPv6
+> for IPv4 or `128` for IPv6.
 
 ```python
 from ic import aws, awsutil

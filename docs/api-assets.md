@@ -21,7 +21,7 @@ To access all files in the `foo/bar` sub-folder:
 from .foo.bar import assets
 ```
 
-> You cannot escape from the folder containing the `brick.yaml` file go
+> You cannot escape from the folder containing the `brick.yaml` file and go
 > up in the file system.
 
 Each asset exposes the following properties depending on your Amazon S3 bucket

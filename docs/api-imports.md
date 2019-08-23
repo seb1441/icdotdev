@@ -19,7 +19,7 @@ See also the [IC Standard Library](api-stdlib.md) for more information.
 Any `.ic` file inside the current brick folder (where the `brick.yaml`
 file is located) and sub-folders can be imported by any other local
 `.ic` files. However, you cannot escape from the folder containing the
-`brick.yaml` file go up in the file system.
+`brick.yaml` file and go up in the file system.
 
 ```python
 from . import foo
